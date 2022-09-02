@@ -1,23 +1,9 @@
-# JSDoc Boilerplate
+# 프리온보딩 프론트엔드 챌린지 2차
 
-## Usage
+안녕하세요🤗
+저는 다른 사람들과 소통하고 같이 협업해서 무언가 만들어
+가는걸 좋아하는 프론트 엔드 개발자 정환민 입니다.
+새로운 기술 익히는데 거부감 없이 흥미롭게 익히는 편 입니다 🤩
 
-### Install
-
-```bash
-npm install
-or
-yarn
-```
-
-### Build
-
-```bash
-npm run docs
-or
-yarn docs
-```
-
-#### Reference
-
-- [jsdoc.app](https://jsdoc.app)
+React를 사용해서 개발하고 ,
+최근에는 Next.js 관심 가지면서 공부중 입니다 ㅎㅎ
