@@ -49,7 +49,7 @@ function READ() {}
 
 /**
  * Represents a todo.
- * @param {string} id - 아이디를 받아서 해당 아이디를 제외한 모든 할 일 수정 가능
+ * @param {number} id - 아이디를 받아서 해당 아이디를 제외한 모든 할 일 수정 가능
  * @param {string} [content] - 할 일 내용 수정 가능
  * @param {boolean} [isDone] - 할 일 완료 여부 수정 가능
  * @param {string} [category] - 할 일 카테고리 수정 가능
