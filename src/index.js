@@ -22,10 +22,10 @@ Todo {
 /**
  * 할일
  * @typedef {Object} Todo
- * @property {number} id - 할일 id
- * @property {string} content - 할일 내용
- * @property {boolean} isDone - 할일 완료 여부
- * @property {string} category - 할일 카테고리
+ * @property {number} id - The id of the todo.
+ * @property {string} content - The content of the todo.
+ * @property {boolean} isDone - The isDone of the todo.
+ * @property {string} category - The category of the todo.
  * @property {string[]} [tags] - The tags of the todo.
  */
 
@@ -47,5 +47,21 @@ function CREATE(id, content, isDone, category, tags) {}
  */
 function READ() {}
 
+/**
+ * Represents a todo.
+ * @param {string} [content] - The content of the todo.
+ * @param {boolean} [isDone] - The isDone of the todo.
+ * @param {string} [category] - The category of the todo.
+ * @param {string[]} [tags] - The tags of the todo.
+ *
+ */
 function UPDATE(content, isDone, category, tags) {}
-function DELETE() {}
+
+/**
+ * Represents a todo.
+ * @param {number} id - The id of the todo.
+ * @param {string} content - The content of the todo.
+ * @param {string[]} [tags] - The tags of the todo.
+ *
+ */
+function DELETE(id, content, tags) {}
