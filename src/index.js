@@ -20,48 +20,46 @@ Todo {
 */
 
 /**
- * 할일
+ * Represents a todo.
  * @typedef {Object} Todo
- * @property {number} id - The id of the todo.
- * @property {string} content - The content of the todo.
- * @property {boolean} isDone - The isDone of the todo.
- * @property {string} category - The category of the todo.
- * @property {string[]} [tags] - The tags of the todo.
+ * @property {number} id - 할 일 리스트 아이디
+ * @property {string} content - 할 일 내용
+ * @property {boolean} isDone - 할 일 완료 여부
+ * @property {string} category - 할 일 분류
+ * @property {string[]} [tags] - 할 일 태그 리스트
  */
 
 /**
  * Represents a todo.
- * @param {number} id - The id of the todo.
- * @param {string} content - The content of the todo.
- * @param {boolean} isDone - The isDone of the todo.
- * @param {string} category - The category of the todo.
- * @param {string[]} [tags] - The tags of the todo.
+ * @param {number} id - 할 일 리스트 아이디
+ * @param {string} content - 할 일 내용
+ * @param {boolean} isDone - 할 일 완료 여부
+ * @param {string} category - 할 일 분류
+ * @param {string[]} [tags] - 할 일 태그 리스트
  *
  */
 function CREATE(id, content, isDone, category, tags) {}
 
 /**
  * Represents a todo.
- * @param {number} [id] - The id of the todo.
- * @returns {Todo|Todo[]} if id in Param return Todo , else return Todos
+ * @param {number} [id] - 아이디가 있으면 특정 아이디 조회 , 없으면 모든 할 일 조회
+ * @returns {Todo|Todo[]} - 아이디가 있으면 특정 할 일 리턴 , 없으면 모든 할 일 리스트 리턴
  */
 function READ() {}
 
 /**
  * Represents a todo.
- * @param {string} [content] - The content of the todo.
- * @param {boolean} [isDone] - The isDone of the todo.
- * @param {string} [category] - The category of the todo.
- * @param {string[]} [tags] - The tags of the todo.
- *
+ * @param {string} id - 아이디를 받아서 해당 아이디를 제외한 모든 할 일 수정 가능
+ * @param {string} [content] - 할 일 내용 수정 가능
+ * @param {boolean} [isDone] - 할 일 완료 여부 수정 가능
+ * @param {string} [category] - 할 일 카테고리 수정 가능
+ * @param {string[]} [tags] - 특정 할 일 태그 수정 가능
  */
-function UPDATE(content, isDone, category, tags) {}
+function UPDATE(id, content, isDone, category, tags) {}
 
 /**
  * Represents a todo.
- * @param {number} id - The id of the todo.
- * @param {string} content - The content of the todo.
- * @param {string[]} [tags] - The tags of the todo.
- *
+ * @param {number} [id] - 아이디를 받아서 특정 할 일 삭제 가능 , 없으면 모든 할 일 삭제 가능
+ * @param {string[]} [tags] - 특정 할 일 특정 태그 삭제 가능 , 모든 태그 삭제 가능
  */
-function DELETE(id, content, tags) {}
+function DELETE(id, tags) {}
